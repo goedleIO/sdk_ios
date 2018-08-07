@@ -55,7 +55,7 @@ If your event has a certain value, like a duration or a level reached, we provid
 **Geohash**
 Besides the standard event tracking, we provide a geo-tracking functionality. We use [geohashes](https://en.wikipedia.org/wiki/Geohash), which is a geocoding system that transforms the classic longitude/latitude representation.
 An implementation of the geohash en/decoding scheme can be found [here](https://github.com/sunng87/node-geohash).
-####<a name="track_objc"></a>Tracking (ObjC)
+#### <a name="track_objc"></a>Tracking (ObjC)
 To track an event, jump into your ViewControllers and add the goedle.io tracking method `[GoedleSdkiOS track:@"."];` for each event you want to track. E.g.,
 ```ruby
 [GoedleSdkiOS track:@"<action>.<specifier>"];
