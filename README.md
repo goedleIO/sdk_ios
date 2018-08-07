@@ -1,5 +1,5 @@
 # goedle_io_sdk
-[![CI Status](http://img.shields.io/travis/Marc Müller/goedle_io_sdk.svg?style=flat)](https://travis-ci.org/Marc Müller/goedle_io_sdk)
+[![CI Status](http://img.shields.io/travis/Marc Müller/goedle_io_sdk.svg?style=flat)](https://travis-ci.org/marcmueller86/goedle_io_sdk)
 [![Version](https://img.shields.io/cocoapods/v/goedle_io_sdk.svg?style=flat)](http://cocoapods.org/pods/goedle_io_sdk)
 [![License](https://img.shields.io/cocoapods/l/goedle_io_sdk.svg?style=flat)](http://cocoapods.org/pods/goedle_io_sdk)
 [![Platform](https://img.shields.io/cocoapods/p/goedle_io_sdk.svg?style=flat)](http://cocoapods.org/pods/goedle_io_sdk)
