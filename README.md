@@ -13,7 +13,7 @@ goedle_io_sdk is available through [CocoaPods](http://cocoapods.org). To install
 ```ruby
 pod "goedle_io_sdk"
 ```
-###ObjC
+### ObjC
 Open your AppDelegate.m and import the following header:
 ```ruby
 #import "GoedleSdkiOS.h"
@@ -29,7 +29,7 @@ The next step is to init the SDK; to do so add the following code
         ...
         }
 ```
-###Swift
+### Swift
 To use the goedle.io iOS SDK with Swift, you need to create a [bridging header](https://developer.apple.com/library/content/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html) and insert:
 ```ruby
 #import "GoedleSdkiOS.h"
@@ -45,7 +45,7 @@ Now open your `AppDelegate.swift` and add the following code to the application 
             ...
         }
 ```
-###Tracking 
+### Tracking 
 Scroll down to get directly to the **implementation** examples in **[ObjC](#track_objc)** and **[Swift](#track_swift)**. 
 **Concept** 
 We typically use two main variables to track an event. The first is the action, e.g., view, share, like — these variables are the specific actions which are done by a user. The second variable further specifies the action e.g., product, intro, category, user. These two variables are concatenated and delimited with a "`.`". Note however that a specifier is not mandatory and we also support hierarchies with more than two levels.
@@ -69,7 +69,7 @@ or with "event_value"
 [GoedleSdkiOS track:@"<action>.<specifier>":@"<event_id>":@"<event_value>"];
 ```
 Where action is something a user is doing ("view" or "buy") and specifier is the object of interest ("page" or "product"). As an additional identifier, you can use the "event_id" field. This is typically used to track an id of a product or an event. If the event has a specific value, like the duration example, you can use the "event_value" field.
-####Tracking Geohashes (ObjC)
+#### Tracking Geohashes (ObjC)
 To track a geohash, you have to call `[GoedleSdkiOS trackGeo:@"."];. For each event you want to track, you can add the geohash if applicable. E.g.:
 ```ruby
 [GoedleSdkiOS trackGeo:@"<action>.<specifier>":@"<geo_hash>"];
@@ -78,7 +78,7 @@ or
 ```ruby
 [GoedleSdkiOS trackGeo:@"<action>.<specifier>":@"<event_id>":@"<geo_hash>"];
 ```
-####<a name="track_swift"></a>Tracking (Swift)
+#### <a name="track_swift"></a>Tracking (Swift)
 To track an event, jump into your ViewControllers and add the goedle.io tracking method `GoedleSdkiOS.track(.);`, for each event you want to track. E.g.,
 ```ruby
 GoedleSdkiOS.track("<action>.<specifier>")
